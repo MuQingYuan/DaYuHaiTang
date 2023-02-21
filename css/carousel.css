@@ -1,0 +1,87 @@
+.focus{            /*轮播图主体盒子样式*/
+    position: relative;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 715px;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.focus ul li img {
+    width: 1519px;
+    height: 715px;
+}
+
+.right{             /*右箭头样式*/
+    display: none;
+    width: 60px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    right: 0;
+    top: 57px;
+    z-index: 2;
+}
+.right span{
+    font-size: 50px;
+    line-height: 600px;
+    color:hsl(0deg 0% 90%);
+}
+.left{              /*左箭头样式*/
+    display: none;
+    width: 60px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    top: 57px;
+    z-index: 2;
+}
+.left span {
+    font-size: 50px;
+    line-height: 600px;
+    color: hsl(0deg 0% 90%);
+}
+.left:hover{       /*左箭头悬停样式*/
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.right:hover{     /*右箭头悬停样式*/
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.focus ul{      
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:400%;
+}
+.focus ul li{
+    float: left;
+}
+
+.dian{           /*小圆点样式*/
+    position: absolute;
+    width: 0;
+    height: 14px;
+    bottom: 15px;
+    left: 50% ;
+    margin-left:-40px ;
+    background: rgba(255, 255 , 255, .3);
+    border-radius: 7px;
+}
+.dian li{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, .3);;
+    border-radius: 4px;
+    float: left;
+    margin: 3px 6px;
+
+}
+.dian .dd{
+    background-color: rgba(255, 255, 255, 1);
+}

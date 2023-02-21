@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大鱼海棠</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./css/music.css" />
+    <script src="./js/slideMove.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 大图 -->
+      <div class="focus">
+        <video controls autoplay>
+          <source src="./musics/dayu_mv.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- 导航栏 -->
+      <div class="nav">
+        <ul>
+          <li><a href="film-evaluation.html">影片评价</a></li>
+          <li><a href="javascript:;">音乐原声</a></li>
+          <li><a href="high-lights.html">精彩片段</a></li>
+          <li><a href="behind-production.html">幕后制作</a></li>
+          <li><a href="people-introduction.html">角色介绍</a></li>
+          <li><a href="index.html">首页</a></li>
+        </ul>
+      </div>
+
+      <div class="title_header">
+        <h2>音乐欣赏</h2>
+      </div>
+
+      <!-- 播放音乐盒子整体样式设计 -->
+      <div class="content">
+        <!-- 音乐专辑，即图片样式 -->
+        <div class="shell">
+          <input type="radio" name="music" id="item-1" checked />
+          <input type="radio" name="music" id="item-2" />
+          <input type="radio" name="music" id="item-3" />
+          <div class="cards">
+            <label for="item-1" class="card" id="song-1">
+              <img src="./images/music-images/image-1.png" alt="" />
+            </label>
+
+            <label for="item-2" class="card" id="song-2">
+              <img src="./images/music-images/image-2.png" alt="" />
+            </label>
+
+            <label for="item-3" class="card" id="song-3">
+              <img src="./images/music-images/image-3.png" alt="" />
+            </label>
+          </div>
+
+          <!-- 播放器 -->
+          <div class="player">
+            <div class="information">
+              <div class="info-area" id="test">
+                <!-- 第一首歌:大鱼 -->
+                <label for="" class="song-info" id="song-info-1">
+                  <span class="title">大鱼</span>
+                  <span class="singer"
+                    ><a
+                      href="https://baike.baidu.com/item/%E5%91%A8%E6%B7%B1/15089196?fr=aladdin"
+                      >周深</a
+                    ></span
+                  >
+                  <audio controls id="music1">
+                    <source src="./musics/zoushen-dayu.mp3" />
+                  </audio>
+                </label>
+                <!-- 第二首歌：在这个世界相遇 -->
+                <label for="" class="song-info" id="song-info-2">
+                  <span class="title">在这个世界相遇</span>
+                  <span class="singer"
+                    ><a
+                      href="https://baike.baidu.com/item/%E9%99%88%E5%A5%95%E8%BF%85/128029?fr=aladdin"
+                      >陈奕迅</a
+                    ></span
+                  >
+                  <audio controls id="music2">
+                    <source
+                      src="./musics/ZaiZheGeShiJieXiangYu-ChengYiXun.mp3"
+                    />
+                  </audio>
+                </label>
+                <!-- 第三首歌：湫兮如风 -->
+                <label for="" class="song-info" id="song-info-3">
+                  <span class="title">湫兮如风</span>
+                  <span class="singer"
+                    ><a
+                      href="https://baike.baidu.com/item/%E5%BE%90%E4%BD%B3%E8%8E%B9/968372?fr=aladdin"
+                      >徐佳莹</a
+                    ></span
+                  >
+                  <audio controls id="music3">
+                    <source src="./musics/QiuXiRuFeng-XuJiaYing.mp3" />
+                  </audio>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部内容 -->
+      <div class="footer">
+        <h5>
+          <a
+            href="https://baike.baidu.com/item/%E5%A4%A7%E9%B1%BC%E6%B5%B7%E6%A3%A0/9248052?fr=aladdin"
+            >《大鱼海棠》</a
+          >
+        </h5>
+        <p>&copy;2023 By 椿湫</p>
+        <div id="myblog">
+          <a href="https://cxy127.online/" target="_blank">个人博客</a>
+        </div>
+      </div>
+
+      <!--旁边侧栏  -->
+      <div class="slide iconfont icon-arrow-up-bold"></div>
+
+      <!-- 关于作者 -->
+      <div class="surprise">
+        <a href="./author-feelings.html">关于作者</a>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        let surprise = document.querySelector(".surprise");
+        document.addEventListener("scroll", function () {
+          if (window.pageYOffset >= 650) {
+            surprise.style.position = "fixed";
+            surprise.style.top = 500 + "px";
+          }
+          if (window.pageYOffset >= 300) {
+            surprise.style.display = "block";
+          } else {
+            surprise.style.display = "none";
+          }
+        });
+        // 鼠标点击于移入样式
+        slide.addEventListener("mouseenter", function () {
+          slide.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+        });
+        slide.addEventListener("mouseleave", function () {
+          slide.style.backgroundColor = "rgb(246, 244, 244)";
+        });
+      });
+    </script>
+  </body>
+</html>

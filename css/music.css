@@ -1,0 +1,299 @@
+body{      /*整体背景设置*/
+    background-repeat: no-repeat ;
+    background-size:  100% 100%;
+    /* background-image: url('../images/background-images/bg-img2.webp'); */
+    background-attachment: fixed;
+    cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'),auto;
+}
+
+
+.focus{            /*音乐mv主体盒子样式*/
+    width: 100%;
+}
+.focus video{
+    width: 100%;
+}
+
+
+
+.container .nav{   /*导航栏*/
+    position: fixed;
+    top: 0;
+    margin: 0px auto;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: rgba(59, 57, 56, 0.5);
+}
+.container .nav li{
+    width: 166.6px;
+    float:right;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    font-family: 微软幼圆;
+}
+.container .nav li:hover{
+    background-color: rgba(59, 57, 56, 1);
+    border-bottom: 5px solid rgba(247, 242, 242, 0.8);
+}
+.container .nav li a{
+    display: inline-block;
+    color: whitesmoke;
+    width: 166.6px;
+    height: 70px;
+}
+
+
+
+.title_header{     /*音乐欣赏标题*/
+    position: relative;
+    margin: 20px auto 0;
+    width: 75%;
+    height: 70px;
+    border-radius: 10px 10px 0 0; 
+    box-shadow: 2px 2px 5px 3px #ddd;
+    background-color:white
+}
+.title_header h2{
+    position: absolute;
+    left: 100px;
+    top: 15px;
+}
+
+
+
+
+.content{      /*播放音乐盒子整体样式设计*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%;
+    height: 100vh;
+    box-shadow: 2px 2px 5px 3px #ddd;
+    background-color:white;
+}
+.shell{
+    width: 100%;
+    max-width: 800px;
+    max-height: 550px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 去掉单选按钮 */
+input[type=radio]{
+    display: none;
+}
+
+.cards{        /*三个图片的盒子样式设置*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.card{     /*每个图片样式设置*/
+    position: absolute;
+    width: 65%;
+    height: 90%;
+    left: 0;
+    right:0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#item-1:checked~.cards #song-1,   /*点击单选按钮时，图片切换转换*/
+#item-2:checked~.cards #song-2,
+#item-3:checked~.cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+#item-1:checked~.cards #song-2,
+#item-2:checked~.cards #song-3,
+#item-3:checked~.cards #song-1{
+    transform: translateX(50%) scale(0.8);
+    opacity: .6;
+    z-index: 0;
+}
+#item-1:checked~.cards #song-3,
+#item-2:checked~.cards #song-1,
+#item-3:checked~.cards #song-2{
+    transform: translateX(-50%) scale(.8);
+    opacity: .6;
+    z-index: 0;
+}
+
+.player{        /*播放器样式*/
+    width: 520px;
+    padding: 20px;
+    margin-top: 20px;
+    /* height: 100px; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 10px rgba(40, 40, 40, .5);
+}
+.title{
+    font: 700 16px "";
+}
+.information{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 15px; */
+    height: 70px;
+    overflow: hidden;
+}
+.info-area{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transition: transform .4s ease-in;
+}
+.singer a{
+    display: flex;
+    color: black;
+    font-size: 17px;
+    margin: 10px 0 20px 0;
+    transition: all .5s;
+}
+.singer a:hover{    /*鼠标悬停歌手名字样式*/
+    color: red;
+    transform-origin: center center;
+    transform: scale(1.1, 1.1);
+}
+.player .information #music1{
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+.player .information #music2{
+    position: absolute;
+    top: 80px;
+    right: 50px; 
+}
+.player .information #music3{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+.song-info{
+    width: calc(100% - 50px);
+    display: block;
+    top: 0;
+    left: 30px;
+}
+
+
+/* 点击图片时，对应的歌曲列表就会向下 */
+#item-1:checked~.player #test{
+    transform: translateY(0);
+}
+#item-2:checked~.player #test{
+    transform: translateY(-70px);
+}
+#item-3:checked~.player #test{
+    transform: translateY(-140px);
+}
+
+
+
+/* 鼠标指向图片，图片悬浮样式 */
+img{
+    transition:all .5s ;
+}
+img:hover{
+    transform: scale(1.1,1.1);
+    z-index: 999;
+}
+
+
+
+
+.container .footer{   /*底部内容*/
+    position: relative;
+    margin: 0px auto 10px;
+    width: 75%;
+    height: 70px;
+    border-radius:0 0 10px 10px;
+    box-shadow: 2px 2px 5px 3px #ddd;
+    background-color:white;
+}
+.container .footer h5{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 90px;
+    text-align: center;
+    margin-left: -45px;
+}
+.container .footer p{
+    position: absolute;
+    font-size: 12px;
+    width: 85px;
+    top: 30px;
+    left: 50%;
+    margin-left: -42.5px;
+}
+.container .footer #myblog{
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 90px;
+    margin-left: -42px;
+    font-size: 12px;
+}
+.container .footer #myblog::before{
+    content: 'Hexo | ';
+    font-size: 12px;
+}
+
+
+
+.container .slide {      /*返回顶部滑轮*/
+    position: absolute;
+    text-align: center;
+    display: none;
+    top: 150px;
+    right: 50px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 25px;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgb(246, 244, 244);
+}
+
+
+
+
+.container .surprise{    /*关于作者*/
+    position: fixed;
+    display: none;
+    right: 50px;
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+    font: 18px "";
+    text-align: center;
+    border-radius: 5px;
+    z-index: 998;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgba(246, 244, 244);
+}
+.container .surprise:hover{
+    background-color: white;
+}

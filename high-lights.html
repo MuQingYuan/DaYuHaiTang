@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大鱼海棠</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/high-lights.css" />
+    <script src="./js/slideMove.js"></script>
+    <script src="./js/bgmusic.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 大图 -->
+      <div class="focus">
+        <video controls autoplay loop="3">
+          <source src="./videos/video4.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- 导航栏 -->
+      <div class="nav">
+        <ul>
+          <li><a href="film-evaluation.html">影片评价</a></li>
+          <li><a href="music.html">音乐原声</a></li>
+          <li><a href="javascript:;">精彩片段</a></li>
+          <li><a href="behind-production.html">幕后制作</a></li>
+          <li><a href="people-introduction.html">角色介绍</a></li>
+          <li><a href="index.html">首页</a></li>
+        </ul>
+      </div>
+
+      <!-- 图片鉴赏 -->
+      <div class="picture">
+        <h2>高亮瞬间</h2>
+      </div>
+
+      <!-- 手风琴样式图 -->
+      <div class="content">
+        <div class="shell">
+          <div class="box">
+            <img src="./images/high-lights-imsges/hl1.png" alt="" />
+          </div>
+
+          <div class="box">
+            <img src="./images/high-lights-imsges/hl2.png" alt="" />
+          </div>
+
+          <div class="box">
+            <img src="./images/high-lights-imsges/hl8.png" alt="" />
+          </div>
+
+          <div class="box">
+            <img src="./images/high-lights-imsges/hl6.png" alt="" />
+          </div>
+
+          <div class="box">
+            <img src="./images/high-lights-imsges/hl7.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 精彩片段 -->
+      <div class="vd">
+        <h2>精彩片段</h2>
+      </div>
+
+      <!-- 视频区域 -->
+      <div class="videos">
+        <div class="box1">
+          <video controls id="video1">
+            <source src="./videos/video1.mp4" type="video/mp4" />
+          </video>
+          <span
+            >"我告诉你什么事情最可悲，你遇见一个人，犯了一个错，你想弥补想还清，到最后才发现你根本无力回天，犯下的罪过永远无法弥补。我们永远无法还清欠下的…只要错了，就是错了永远无法弥补。"
+            --灵婆</span
+          >
+        </div>
+
+        <div class="box2">
+          <video controls id="video2">
+            <source src="./videos/video2.mp4" type="video/mp4" />
+          </video>
+          <span
+            >湫："有些事情我想忘，但是忘不掉"<br />
+            鹿神："那就别忘了，真正的忘记是不需要努力的"<br /><br />
+            "啊~~
+            你以为你接受的是谁的爱?你接受的是一个天神的爱!他将背叛所有的神灵去爱你!为你忍受一切痛苦!带给你欢乐!"
+            --湫
+          </span>
+        </div>
+
+        <div class="box3">
+          <video controls id="video3">
+            <source src="./videos/video3.mp4" type="video/mp4" />
+          </video>
+          <span
+            >"我喜欢看你吃东西的样子，你吃东西的样子很好看。你什么样子我都见过，你任性的时候，生气的时候，伤心的时候，最尴尬的时候，都很好看。"</span
+          >
+        </div>
+
+        <div class="box4">
+          <video controls id="video4">
+            <source src="./videos/video4.mp4" type="video/mp4" />
+          </video>
+          <span
+            >"椿，答应我，握紧我的手，不要挣脱，我必须把你送走，我们一定会再见面的，你相信我！我很后悔最后那天晚上没能紧紧抱住你，你会过得很幸福！"<br /><br />
+            "我会化作人间的风雨陪在你身边,再见了！"
+          </span>
+        </div>
+      </div>
+
+      <!-- 底部内容 -->
+      <div class="footer">
+        <h5>
+          <a
+            href="https://baike.baidu.com/item/%E5%A4%A7%E9%B1%BC%E6%B5%B7%E6%A3%A0/9248052?fr=aladdin"
+            >《大鱼海棠》</a
+          >
+        </h5>
+        <p>&copy;2023 By 椿湫</p>
+        <div id="myblog">
+          <a href="https://cxy127.online/" target="_blank">个人博客</a>
+        </div>
+      </div>
+
+      <!--旁边侧栏  -->
+      <div class="slide iconfont icon-arrow-up-bold"></div>
+
+      <!-- 关于作者 -->
+      <div class="surprise">
+        <a href="./author-feelings.html">关于作者</a>
+      </div>
+    </div>
+
+    <!-- 背景音乐 -->
+    <div class="bgmusic_box">
+      <div id="bgmusic">
+        <img src="./images/bgmusic-images/bgmusic.png" alt="胶片" />
+      </div>
+      <div class="iconfont icon-yinle1" id="bgicon"><span> song</span></div>
+      <audio id="song">
+        <source src="./musics/zoushen-dayu.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        let surprise = document.querySelector(".surprise");
+        let bgmusic = document.querySelector(".bgmusic_box");
+        document.addEventListener("scroll", function () {
+          if (window.pageYOffset >= 650) {
+            surprise.style.position = "fixed";
+            surprise.style.top = 500 + "px";
+            bgmusic.style.position = "fixed";
+            bgmusic.style.top = 80 + "px";
+          }
+          if (window.pageYOffset >= 300) {
+            surprise.style.display = "block";
+            bgmusic.style.display = "block";
+          } else {
+            surprise.style.display = "none";
+            bgmusic.style.display = "none";
+          }
+        });
+        // 鼠标点击于移入样式
+        slide.addEventListener("mouseenter", function () {
+          slide.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+        });
+        slide.addEventListener("mouseleave", function () {
+          slide.style.backgroundColor = "rgb(246, 244, 244)";
+        });
+      });
+    </script>
+  </body>
+</html>

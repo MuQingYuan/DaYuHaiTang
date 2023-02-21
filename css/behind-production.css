@@ -1,0 +1,303 @@
+body{      /*整体背景设置*/
+    background-repeat: no-repeat ;
+    background-size:  100% 100%;
+    /* background-image: url('../images/background-images/bg-img2.webp'); */
+    background-attachment: fixed;
+    cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'),auto;
+}
+
+
+
+.container .nav{   /*导航栏*/
+    position: fixed;
+    top: 0;
+    margin: 0px auto;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: rgba(59, 57, 56, 0.5);
+}
+.container .nav li{
+    width: 166.6px;
+    float:right;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    font-family: 微软幼圆;
+}
+.container .nav li:hover{
+    background-color: rgba(59, 57, 56, 1);
+    border-bottom: 5px solid rgba(247, 242, 242, 0.8);
+}
+.container .nav li a{
+    display: inline-block;
+    color: whitesmoke;
+    width: 166.6px;
+    height: 70px;
+}
+
+
+
+
+.container .content{     /*正文内容*/ 
+    margin: 100px auto 0;
+    width: 85%; 
+    height: 1830px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 2px 2px 5px 3px #ddd;
+}
+
+
+.container .content .content1{   /*灵感来源*/
+    position: relative;
+    width: 85%;
+    height: 425px;
+    /* background-color: pink; */
+    margin: 50px auto 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px 3px rgb(181, 172, 172);
+    /* background-color: whitesmoke; */
+    background-color: white;
+}
+.container .content1 h2{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -50px;
+}
+.container .content1 p {
+    position: absolute;
+    text-indent: 3rem;
+    top: 70px;
+    margin: 0px 30px 30px 30px ;
+    width: 400px;
+    height: 330px;
+    font: 17px 微软幼圆;
+    line-height: 38px;
+    /* background-color: yellow; */
+}
+.container .content1 img {
+    position: absolute;
+    top: 75px;
+    right: 45px;
+    width: 500px;
+    height: 330px;
+}
+
+
+
+.container .content .content2{   /*制作过程*/
+    position: relative;
+    width: 85%;
+    height: 600px;
+    margin: 50px auto 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px 3px rgb(181, 172, 172);
+    /* background-color: whitesmoke; */
+    background-color: white;
+    /* background-color: skyblue; */
+}
+.container .content2 h2{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -50px;
+}
+.container .content2 p {
+    position: absolute;
+    text-indent: 3rem;
+    top: 20px;
+    width: 900px;
+    height: 270px;
+    font: 17px 微软幼圆;
+    line-height: 38px;
+    margin: 50px 50px 0 50px;
+    /* background-color: yellow;  */
+}
+.container .content2 img{
+    margin: 0px 10px 0px 10px;
+    width: 310px;
+    height: 200px;
+}
+.container .content2 table{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+
+
+.container .content3 {   /*幕后花絮*/
+    position: relative;
+    width: 85%;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px 3px rgb(181, 172, 172);
+    /* background-color: whitesmoke; */
+    background-color: white;
+    /* background-color: pink; */
+}
+.container .content3 h2{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -50px;
+}
+.container .content3 ul{ 
+    position: absolute;
+    list-style: inherit;
+    top: 60px;
+    left: 40px;
+}
+.container .content3 li{
+    font: 16px 微软幼圆;
+    margin-bottom: 10px;
+} 
+
+
+
+/* 鼠标指向图片，图片悬浮样式 */
+img{
+    transition:all .5s ;
+}
+img:hover{
+    transform: scale(1.07,1.1);
+    z-index: 999;
+}
+
+
+
+
+.container .footer{   /*底部内容*/
+    position: relative;
+    margin: 0px auto 10px;
+    width: 85%;
+    height: 70px;
+    border-radius:0 0 10px 10px;
+    box-shadow: 2px 2px 5px 3px #ddd;
+    background-color:white;
+}
+.container .footer h5{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 90px;
+    text-align: center;
+    margin-left: -45px;
+}
+.container .footer p{
+    position: absolute;
+    font-size: 12px;
+    width: 85px;
+    top: 30px;
+    left: 50%;
+    margin-left: -42.5px;
+}
+.container .footer #myblog{
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 90px;
+    margin-left: -42px;
+    font-size: 12px;
+}
+.container .footer #myblog::before{
+    content: 'Hexo | ';
+    font-size: 12px;
+}
+
+
+.container .slide {      /*返回顶部滑轮*/
+    position: absolute;
+    text-align: center;
+    display: none;
+    top: 150px;
+    right: 50px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 25px;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgb(246, 244, 244);
+}
+
+
+
+.container .surprise{    /*关于作者*/
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+    font: 18px "";
+    text-align: center;
+    border-radius: 5px;
+    z-index: 998;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgba(246, 244, 244);
+}
+.container .surprise:hover{
+    background-color: white;
+}
+
+
+
+.bgmusic_box{      /*背景音乐盒子样式设置*/
+    position: fixed;
+    display: inline-block;
+    top: 80px;
+    left: 25px;
+    width: 80px;
+    height: 100px;
+    /* border-radius: 40px; */
+    cursor: pointer;
+    z-index: 998;
+    /* background-color: yellow; */
+}
+#bgmusic{      /*背景音乐盒子样式设置*/
+    /* position: fixed; */
+    display: inline-block;
+    /* top: 80px; */
+    /* right: 25px; */
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#bgmusic img{      /*背景音乐图片*/
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.songRotate{    /*设置动画*/
+    animation: songRotate 60s linear 0ms infinite;
+}
+@keyframes songRotate {
+    0% {
+        transform: rotate(0deg);        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#bgicon{    /*耳机字体图标，song样式设置*/
+    width: 70px;
+    height: 28px;
+    font-size: 20px;
+    color: aquamarine;
+}
+#bgicon span{
+    font-size: 20px;
+    font-family:Comic Sans MS, 幼圆, 微软雅黑;
+}

@@ -1,0 +1,369 @@
+body{      /*整体背景设置*/
+    background-repeat: no-repeat ;
+    background-size:  100% 100%;
+    /* background-image: url('../images/background-images/bg-img2.webp'); */
+    background-attachment: fixed;
+    cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'),auto;
+}
+
+
+.focus{            /*视频header主体盒子样式*/
+    width: 100%;
+}
+.focus video{
+    width: 100%;
+}
+
+
+
+.container .nav{   /*导航栏*/
+    position: fixed;
+    top: 0;
+    margin: 0px auto;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: rgba(59, 57, 56, 0.5);
+}
+.container .nav li{
+    width: 166.6px;
+    float:right;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    font-family: 微软幼圆;
+}
+.container .nav li:hover{
+    background-color: rgba(59, 57, 56, 1);
+    border-bottom: 5px solid rgba(247, 242, 242, 0.8);
+}
+.container .nav li a{
+    display: inline-block;
+    color: whitesmoke;
+    width: 166.6px;
+    height: 70px;
+}
+
+
+
+.picture{     /*高亮瞬间*/
+    margin: 40px auto 0;
+    line-height: 70px;
+    width: 75%;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 2px 2px 5px 3px #ddd;
+}
+.picture h2{
+    margin-left: 50px;
+}
+
+
+
+
+.content{             /*手风琴样式*/
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 75%;
+    height: 450px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px ;
+    box-shadow: 2px 2px 5px 3px #ddd;
+    border-top: 1px solid black;
+}
+.content .shell{
+    width: 95%;
+    height: 400px;
+    display: flex;
+}
+.content .box{
+    flex: 1;
+    overflow: hidden;
+    transition: .6s;
+    margin: 0 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: rgba(249, 240, 240, 1);
+}
+.content .box>img{
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s; 
+}
+.content .box:hover{
+    flex-basis: 50%;
+}
+.content .box:hover>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.vd{     /*精彩片段*/
+    margin: 50px auto 0;
+    line-height: 70px;
+    width: 75%;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 2px 2px 5px 3px #ddd;
+}
+.vd h2{
+    margin-left: 50px;
+}
+
+
+.container .videos{    /*视频样式*/
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    height: 1040px;
+    border-top: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 2px 5px 3px #ddd;
+}
+.container .videos video{    /*四个视频公共样式*/
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px rgb(106, 102, 102);
+    transition: 0.8s .1s;
+}
+.container .videos span{     /*四个视频旁边文字公共样式*/
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 125px;
+    font-size: 20px;
+    font-family: 华文行楷, 幼圆, 微软雅黑;
+}
+
+
+.container .videos .box1{    /*第一个视频,即第一栏的样式*/
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 255px;
+}
+.container .videos .box1 #video1{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.container .videos #video1:hover{
+    z-index: 4;
+    transform: scale(2,2);
+    transform-origin: left top;
+}
+.container .videos .box1 span{
+    right: 55px;
+    top: 70px;
+}
+
+
+
+.container .videos .box2{    /*第二个视频,即第二栏样式*/
+    position: relative;
+    width: 1000px;
+    height: 255px;
+}
+.container .videos .box2 #video2{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.container .videos #video2:hover{
+    z-index: 3;
+    transform: scale(2,2);
+    transform-origin: right top;
+}
+.container .videos .box2  span{
+    height: 150px;
+    top: 60px;
+    left: 60px;
+}
+
+
+
+
+.container .videos .box3{    /*第三个视频,即第三栏样式*/
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 255px;
+}
+.container .videos .box3 #video3{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.container .videos #video3:hover{
+    z-index: 2;
+    transform: scale(2,2);
+    transform-origin: left top;
+}
+.container .videos .box3 span{
+    top: 80px;
+    right: 60px;
+}
+
+
+
+
+.container .videos .box4{     /*第四个视频,即第四栏样式*/
+    position: relative;
+    width: 1000px;
+    height: 255px;
+}
+.container .videos .box4 #video4{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.container .videos #video4:hover{
+    z-index: 2;
+    transform: scale(2,2);
+    transform-origin: right bottom;
+} 
+.container .videos .box4 span{
+    height:126px;
+    top: 50px;
+    left: 60px;
+}
+
+
+
+.container .footer{   /*底部内容*/
+    position: relative;
+    margin: 0px auto 10px;
+    width: 75%;
+    height: 70px;
+    border-radius:0 0 10px 10px;
+    box-shadow: 2px 2px 5px 3px #ddd;
+    background-color:white;
+}
+.container .footer h5{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 90px;
+    text-align: center;
+    margin-left: -45px;
+}
+.container .footer p{
+    position: absolute;
+    font-size: 12px;
+    width: 85px;
+    top: 30px;
+    left: 50%;
+    margin-left: -42.5px;
+}
+.container .footer #myblog{
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    width: 90px;
+    margin-left: -42px;
+    font-size: 12px;
+}
+.container .footer #myblog::before{
+    content: 'Hexo | ';
+    font-size: 12px;
+}
+
+
+
+.container .slide {      /*返回顶部滑轮*/
+    position: absolute;
+    text-align: center;
+    display: none;
+    top: 150px;
+    right: 50px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 25px;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgb(246, 244, 244);
+}
+
+
+
+
+.container .surprise{    /*关于作者*/
+    position: fixed;
+    display: none;
+    right: 50px;
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+    font: 18px "";
+    text-align: center;
+    border-radius: 5px;
+    z-index: 998;
+    border: 2px solid rgb(246, 244, 244);
+    background-color: rgba(246, 244, 244);
+}
+.container .surprise:hover{
+    background-color: white;
+}
+
+
+
+
+.bgmusic_box{      /*背景音乐盒子样式设置*/
+    position: fixed;
+    display: none;
+    top: 80px;
+    left: 25px;
+    width: 80px;
+    height: 100px;
+    /* border-radius: 40px; */
+    cursor: pointer;
+    z-index: 998;
+    /* background-color: yellow; */
+}
+#bgmusic{      /*背景音乐盒子样式设置*/
+    /* position: fixed; */
+    display: inline-block;
+    /* top: 80px; */
+    /* right: 25px; */
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#bgmusic img{      /*背景音乐图片*/
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+.songRotate{    /*设置动画*/
+    animation: songRotate 60s linear 0ms infinite;
+}
+@keyframes songRotate {
+    0% {
+        transform: rotate(0deg);        
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#bgicon{    /*耳机字体图标，song样式设置*/
+    width: 70px;
+    height: 28px;
+    font-size: 20px;
+    color: aquamarine;
+}
+#bgicon span{
+    font-size: 20px;
+    font-family:Comic Sans MS, 幼圆, 微软雅黑;
+}
