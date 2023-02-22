@@ -291,7 +291,8 @@ body{      /*整体背景设置*/
     font-size: 35px;
     border-radius: 25px;
     border: 2px solid rgb(246, 244, 244);
-    background-color: rgb(246, 244, 244);
+    box-shadow: 1px 1px 1px 1px #ddd;
+    /* background-color: rgb(246, 244, 244); */
 }
 
 
@@ -309,10 +310,12 @@ body{      /*整体背景设置*/
     border-radius: 5px;
     z-index: 998;
     border: 2px solid rgb(246, 244, 244);
-    background-color: rgba(246, 244, 244);
+    box-shadow: 1px 1px 1px 1px #ddd;
+    /* background-color: rgba(246, 244, 244); */
 }
 .container .surprise:hover{
-    background-color: white;
+    background-color: rgba(246, 244, 244, .7);
+    /* background-color: white; */
 }
 
 

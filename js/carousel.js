@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     var left = this.document.querySelector('.left');
     var right = this.document.querySelector('.right');
     var focus = this.document.querySelector('.focus');
-    var ul = this.document.querySelector('ul');
+    var ul = this.document.querySelector('.picture');
     var ol = this.document.querySelector('.dian');
     // 左右箭头显示与隐藏
     focus.addEventListener('mouseenter', function() {
@@ -23,9 +23,10 @@ window.addEventListener('load', function() {
     })
     // 动态生成小圆圈
     var num = ul.children.length - ol.children.length;
+    const add = ul.clientWidth;
     for(var i =0 ; i < num; i++){
         ol.style.width = ol.clientWidth + 20+ 'px';
-        ul.style.width = ul.clientWidth + 1500 + 'px';
+        ul.style.width = ul.clientWidth + add + 'px';
     var li = this.document.createElement('li');
     ol.appendChild(li);
     }

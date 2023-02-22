@@ -19,10 +19,10 @@ slide.addEventListener('click', function() {
 
 // 鼠标点击于移入样式
 slide.addEventListener('mouseenter', function() {
-  slide.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+  slide.style.backgroundColor = 'rgba(246, 244, 244, .7)';
 })
 slide.addEventListener('mouseleave', function() {
-  slide.style.backgroundColor = 'rgb(246, 244, 244)';
+  slide.style.backgroundColor = 'rgb(255, 255, 255)';
 })
 
 

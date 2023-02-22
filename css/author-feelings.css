@@ -23,6 +23,7 @@ body{     /*整体背景设置*/
     width: 100%;
     height:715px;
     background-image: url(../images/author-feelings-images/1.png);
+    background-size: 100% 100%;
 }
 .focus_box .box1{
     position:absolute;
@@ -252,7 +253,8 @@ body{     /*整体背景设置*/
     font-size: 35px;
     border-radius: 25px;
     border: 2px solid rgb(246, 244, 244);
-    background-color: rgb(246, 244, 244);
+    box-shadow: 1px 1px 1px 1px #ddd;
+    /* background-color: rgb(246, 244, 244); */
 }
 
 
