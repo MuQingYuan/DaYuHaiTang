@@ -15,7 +15,7 @@ body{     /*整体背景设置*/
     width: 100%;
     height: 715px;
     overflow: hidden;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .focus_box{
     position: relative;
