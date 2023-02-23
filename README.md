@@ -38,9 +38,9 @@
 
 ## ==附加：==
 
-+ 部署的网站在gitee上，可以运行以下命令直接从GitHub上获取代码：
++ 部署的网站在github上，可以运行以下命令直接从GitHub上获取代码：
 
   ```Github
-  $ git clone https://github.com/MuQingYuan/DaYuHaiTang.git
+  $ git clone git@github.com:MuQingYuan/DaYuHaiTang.git
   ```
 
